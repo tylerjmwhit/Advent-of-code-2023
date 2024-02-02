@@ -34,10 +34,9 @@ def testadjacent(start: int, size: int, row: int, matrix, symbols ) -> int:
     return 0
 
 
-
 if __name__ == "__main__":
     matrix = []
-    with open(r"Day_3\input1.txt") as file:
+    with open(r"Day_3\example1.txt") as file:
         for line in file:
             matrix.append(list(line.strip()))
     
@@ -45,7 +44,6 @@ if __name__ == "__main__":
     excluded = np.array([1,2,3,4,5,6,7,8,9,'.'])
     symbols = np.setdiff1d(unique,excluded)
     
-
     #find the size of the number
     size = 0
     sum = 0
